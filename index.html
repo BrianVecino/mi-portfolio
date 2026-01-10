@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Vecino | Desarrollador Frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy Brian Vecino</h1>
+            <h2>Desarrollador Frontend</h2>
+            <p>Construyo interfaces de usuario responsivas y funcionales con enfoque en la eficiencia y la experiencia del usuario (UX).</p>
+            <div class="contact-links">
+                <a href="https://github.com/BrianVecino" target="_blank" class="btn primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/brian-vecino-582ab72a6/" target="_blank" class="btn secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="docs/CV - Brian Vecino.pdf" download class="btn secondary"><i class="fa-solid fa-file"></i> Curriculum</a>
+                <button id="copyEmailBtn" class="btn secondary" data-email="brian.vecino@outlook.com">
+                <i class="fa-solid fa-envelope"></i>Email (Click para Copiar)
+                </button>
+                <a href="tel:+5492346564256" class="btn secondary"><i class="fa-solid fa-phone"></i> Teléfono</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="projects-section">
+        <h3>Mis Proyectos Destacados</h3>
+        <div class="projects-grid">
+            
+            <article class="project-card">
+                <img class="imagg" src="img/brianvecino.github.io_peliculas-tmdb_.png" alt="">
+                <h4>🎥 Movie Browser & Filter (TMDb)</h4>
+                <p>Aplicación para explorar películas populares, implementando filtrado dinámico a través de la API The Movie Database (TMDb).</p>
+                <div class="project-tags">
+                    <span>JavaScript</span><span>APIs (Fetch)</span><span>CSS Grid</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://brianvecino.github.io/peliculas-tmdb/" target="_blank" class="btn primary">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/peliculas-tmdb.git" target="_blank" class="btn secondary">Código</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="imagg" src="img/brianvecino.github.io_To-do-List_.png" alt="">
+                <h4>📋 To-Do App Interactivo</h4>
+                <p>Lista de tareas funcional que permite crear, completar y eliminar tareas. Incluye un sistema de persistencia de datos y Modo Oscuro.</p>
+                <div class="project-tags">
+                    <span>JavaScript Vainilla</span><span>DOM Manipulation</span><span>LocalStorage</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://brianvecino.github.io/To-do-List/" target="_blank" class="btn primary">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/To-do-List.git" target="_blank" class="btn secondary">Código</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+<hr class="section-divider">
+  <section id="about" class="about-section"> 
+    <h3>Sobre mí</h3>
+    <div class="about-content"> <p>
+            Soy Brian Vecino, un desarrollador Frontend apasionado por convertir diseños e ideas en interfaces web rápidas y eficientes. Mi viaje en la programación comenzó con un curso de JavaScript en CoderHouse, y desde entonces, me he enfocado en dominar las tecnologías fundamentales del desarrollo web.
+        </p>
+        <p>
+            Mi enfoque principal es la funcionalidad y la experiencia del usuario (UX). Creo que la mejor interfaz es aquella que el usuario no tiene que pensar. Disfruto la resolución de problemas lógicos con JavaScript y la creación de diseños responsivos y temáticos utilizando CSS.
+            <br><br>Estoy en constante aprendizaje y buscando activamente unirme a un equipo donde pueda aplicar mis habilidades técnicas para crear soluciones y contribuir al crecimiento colectivo.
+        </p>
+    </div>
+</section>
+
+</section>
+    
+    <hr class="section-divider"> <section id="skills" class="skills-section">
+        <h3>Mi Stack Tecnológico</h3>
+        <div class="skills-category">
+            <h4>Lenguajes Fundamentales</h4>
+            <div class="skills-list">
+                <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fa-brands fa-angular"></i> Angular</span>
+                <span class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h4>APIs y Persistencia</h4>
+            <div class="skills-list">
+                <span class="skill-tag">Fetch API</span>
+                <span class="skill-tag">APIs REST</span>
+                <span class="skill-tag">LocalStorage</span>
+            </div>
+        </div>
+        
+        <div class="skills-category">
+            <h4>Herramientas y Control de Versiones</h4>
+            <div class="skills-list">
+                <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2026 Brian Vecino.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
