@@ -5,116 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Vecino | Desarrollador Frontend</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
 </head>
 <body>
     
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hola, soy Brian Vecino</h1>
-            <h2>Desarrollador Frontend</h2>
-            <p>Construyo interfaces de usuario responsivas y funcionales con enfoque en la eficiencia y la experiencia del usuario (UX).</p>
-            <div class="contact-links">
-                <a href="https://github.com/BrianVecino" target="_blank" class="btn primary"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/brian-vecino-582ab72a6/" target="_blank" class="btn secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="docs/CV - Brian Vecino.pdf" download class="btn secondary"><i class="fa-solid fa-file"></i> Curriculum</a>
-                <button id="copyEmailBtn" class="btn secondary" data-email="brian.vecino@outlook.com">
-                <i class="fa-solid fa-envelope"></i>Email (Click para Copiar)
-                </button>
-                <a href="tel:+5492346564256" class="btn secondary"><i class="fa-solid fa-phone"></i> Teléfono</a>
-            </div>
-        </div>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-items"><a href="#">inicio</a></li>
+                <li class="nav__list-items"><a href="#about">Sobre mi</a></li>
+                <li class="nav__list-items"><a href="#">Proyectos</a></li>
+                <li class="nav__list-items"><a href="#">Skills</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="projects" class="projects-section">
-        <h3>Mis Proyectos Destacados</h3>
-        <div class="projects-grid">
-            
-            <article id="card-movie" class="project-card">
-                <img class="imagg" src="img/brianvecino.github.io_peliculas-tmdb_.png" alt="">
-                <h4>🎥 Buscador de peliculas & Filtro (TMDb)</h4>
-                <p>Aplicación para explorar películas populares, implementando filtrado dinámico a través de la API The Movie Database (TMDb).</p>
-                <div class="project-tags">
-                    <span>JavaScript</span><span>APIs (Fetch)</span><span>CSS Grid</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://brianvecino.github.io/peliculas-tmdb/" target="_blank" class="btn primary">Ver Demo</a>
-                    <a href="https://github.com/BrianVecino/peliculas-tmdb.git" target="_blank" class="btn secondary">Código</a>
-                </div>
-            </article>
-
-            <article id="card-list" class="project-card">
-                <img class="imagg" src="img/brianvecino.github.io_To-do-Angular_.png" alt="">
-                <h4>📋 To-Do App Con Angular</h4>
-                <p>Lista de tareas funcional que permite crear, completar y eliminar tareas. Incluye un sistema de persistencia de datos.</p>
-                <div class="project-tags">
-                    <span>Angular 21</span><span>Signals</span><span>LocalStorage</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://brianvecino.github.io/To-do-Angular/" target="_blank" class="btn primary">Ver Demo</a>
-                    <a href="https://github.com/BrianVecino/To-do-Angular.git" target="_blank" class="btn secondary">Código</a>
-                </div>
-            </article>
+    <section id="about" class="about__section">
+          <div class="about__container">
+            <h1>Hola, soy Brian Vecino</h1>
+            <h2 class="about__section-h2">Desarrollador Frontend</h2>
+            <p class="about__section-p">Apasionado por convertir diseños e ideas en interfaces web rápidas y eficientes. Mi viaje en la programación comenzó con un curso de JavaScript en  CoderHouse, y desde entonces, me he enfocado en dominar las tecnologías fundamentales del desarrollo web.<br><br>
+            Mi enfoque principal es la funcionalidad y la experiencia del usuario (UX). Creo que la mejor interfaz es aquella que el usuario no tiene que pensar. Disfruto la resolución de problemas lógicos con JavaScript y la creación de diseños responsivos y temáticos utilizando CSS.<br><br>
+            Estoy en constante aprendizaje y buscando activamente unirme a un equipo donde pueda aplicar mis habilidades técnicas para crear soluciones y contribuir al crecimiento colectivo.</p>
             </div>
     </section>
 
-<hr class="section-divider">
-<section id="about" class="about-section"> 
-    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-back" >
-    <h3>Sobre mí</h3>
-    <div class="about-content"> <p>
-        Soy Brian Vecino, un desarrollador Frontend apasionado por convertir diseños e ideas en interfaces web rápidas y eficientes. Mi viaje en la programación comenzó con un curso de JavaScript en CoderHouse, y desde entonces, me he enfocado en dominar las tecnologías fundamentales del desarrollo web.
-    </p>
-    <p>
-        Mi enfoque principal es la funcionalidad y la experiencia del usuario (UX). Creo que la mejor interfaz es aquella que el usuario no tiene que pensar. Disfruto la resolución de problemas lógicos con JavaScript y la creación de diseños responsivos y temáticos utilizando CSS.
-        <br><br>Estoy en constante aprendizaje y buscando activamente unirme a un equipo donde pueda aplicar mis habilidades técnicas para crear soluciones y contribuir al crecimiento colectivo.
-    </p>
-</div>
-</div>
+
+ <section class="contact__section">
+    <ul class="contact__list">
+        <li class="contact__list-items">
+            <a href="https://github.com/BrianVecino" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </li>
+
+                    <li class="contact__list-items">
+                        <a href="https://www.linkedin.com/in/brian-vecino-582ab72a6/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </li>
+
+                    <li class="contact__list-items">
+                        <a href="docs/CV - Brian Vecino.pdf" download><i class="fa-solid fa-file"></i> Curriculum</a>
+                    </li>
+                    <button class="contact__list-items" id="copyEmailBtn" data-email="brian.vecino@outlook.com">
+                    <a href="mailto:brian.vecino@outlook.com"><i class="fa-solid fa-envelope"></i> Email (Click para Copiar)</a>
+                    </button>
+                    <button  class="contact__list-items"><a href="tel:+5492346564256">
+                        <i class="fa-solid fa-phone"></i> Teléfono</a>
+                    </button>
+                </ul>
+            </section>
+
+<hr class="section__divider">
+
+    <section id="projects" class="projects__section">
+        <h2>Mis Proyectos Destacados</h2>
+        <div class="projects__container"> 
+
+            <article id="card-list" class="project__container-card">
+                <img class="projects__img" src="img/brianvecino.github.io_To-do-Angular_.png" alt="">
+                <h4 class="card__title">📋 To-Do App Con Angular</h4>
+                <p class="card__p">Lista de tareas funcional que permite crear, completar y eliminar tareas. Incluye un sistema de persistencia de datos.</p>
+                <div class="project__container-tags">
+                    <ul class="project__container-list">
+                        <li class="project__container-item">Angular 21</li>
+                        <li class="project__container-item">Signals</li>
+                        <li class="project__container-item">LocalStorage</li>
+                    </ul>
+                </div>
+                <div class="project__container-links">
+                    <a href="https://brianvecino.github.io/peliculas-tmdb/" target="_blank" class="btn">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/peliculas-tmdb.git" target="_blank" class="btn">Código</a>
+                </div>
+            </article>
+
+            <article id="card-movie" class="project__container-card">
+                <img class="projects__img" src="img/brianvecino.github.io_peliculas-tmdb_.png" alt="">
+                <h4 class="card__title">🎥 Buscador de peliculas & Filtro (TMDb)</h4>
+                <p class="card__p">Aplicación para explorar películas populares, implementando filtrado dinámico a través de la API The Movie Database (TMDb).</p>
+                <div class="project__container-tags">
+                    <ul class="project__container-list">
+                        <li class="project__container-item">JavaScript</li>
+                        <li class="project__container-item">APIs (Fetch)</li>
+                        <li class="project__container-item">CSS GRID</li>
+                    </ul>
+                </div>
+                <div class="project__container-links">
+                    <a href="https://brianvecino.github.io/To-do-Angular/" target="_blank" class="btn">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/To-do-Angular" target="_blank" class="btn">Código</a>
+                </div>
+            </article>
+
+            </div>
+    </section>
+
+<hr class="section__divider">
+
+<section class="academic__section">
+    <h2 class="academic__title">Formacion Academica</h2>
+        <div class="academic__grid">
+            <article class="academic__card">
+                <h4 class="academic__card-institution">CoderHouse</h4>
+                <p class="academic__card-course">Curso Completado de Angular</p>
+                <time class="academic__card-date">2023</time>
+                <a class="academic__card-title" href="/img/angular.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
+            </article>
+            <article class="academic__card">
+                <h4 class="academic__card-institution">CoderHouse</h4>
+                <p class="academic__card-course">Curso Completado de JavaScript</p>
+                <time class="academic__card-date">2024</time>
+                <a class="academic__card-title" href="/img/js.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
+            </article>
+
+            <article class="academic__card">
+                <h4 class="academic__card-institution">Teclab</h4>
+                <p class="academic__card-course">Tecnicatura en Programacion
+                    Certificado Intermedio
+                </p>
+                <time class="academic__card-date">2026</time>
+                <a class="academic__card-title" href="/img/diploma intermedio.pdf" download><i class="fa-solid fa-file"></i> Certificado</a>
+            </article>
+        </div>
 </section>
 
-</section>
+
+    <hr class="section__divider"> 
+
+    <section class="skills__section">
+        <h4 class="skills__title">Stack Tecnologico</h4>
     
-    <hr class="section-divider"> <section id="skills" class="skills-section">
-        <div data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-back" >
-        <h3>Mi Stack Tecnológico</h3>
-        <div class="skills-category">
-            <h4>Lenguajes Fundamentales</h4>
-            <div class="skills-list">
-                <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
-                <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="skill-tag"><i class="fa-brands fa-angular"></i> Angular</span>
-                <span class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
-            </div>
-        </div>
+        <h4 class="skills__grid-title">Front End</h4>
+        <div class="skills__grid">
+            <article class="skills__card">
+                <i class="fa-brands fa-html5 skills__icon"></i>
+                <p class="skills__name">HTML</p>
+            </article>
 
-        <div class="skills-category">
-            <h4>APIs y Persistencia</h4>
-            <div class="skills-list">
-                <span class="skill-tag">Fetch API</span>
-                <span class="skill-tag">APIs REST</span>
-                <span class="skill-tag">LocalStorage</span>
-            </div>
+            <article class="skills__card">
+                <i class="fa-brands fa-css3 skills__icon"></i>
+                <p class="skills__name">CSS</p>
+            </article>
+
+            <article class="skills__card">
+                <i class="fa-brands fa-js skills__icon"></i>
+                <p class="skills__name">JAVASCRIPT</p>
+            </article>
+</div>
+
+        <h4 class="skills__grid-title">Framework, tools y database</h4>
+        <div class="skills__grid">
+            <article class="skills__card">
+                <i class="fa-brands fa-angular skills__icon"></i>
+                <p class="skills__name">ANGULAR</p>
+            </article>
         </div>
+        <div class="skills__grid">
+            <article class="skills__card">
+                <i class="fa-brands fa-git-alt skills__icon"></i>
+                <p class="skills__name">GIT</p>
+            </article>
+
+            <article class="skills__card">
+                <i class="fa-solid fa-database skills__icon"></i>
+                <p class="skills__name">POSTGRESQL</p>
+            </article>
+            </div>
         
-        <div class="skills-category">
-            <h4>Herramientas y Control de Versiones</h4>
-            <div class="skills-list">
-                <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
-                <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
-            </div>
-        </div>
-        </div>
     </section>
+
+
+
     <footer class="footer">
         <p>&copy; 2026 Brian Vecino.</p>
     </footer>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>
