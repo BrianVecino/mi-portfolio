@@ -40,19 +40,18 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
-    
 }
 
 .nav__list-items {
-    margin: 5px 0;
     list-style: none;
-    padding: 8px 25px;
     background-color: var(--bg-secondary);
     border-radius: 10px;
     box-shadow: 0 0 6px 2px var(--shadow);
 }
 
 .nav__list-items a {
+    display: block;
+    padding: 8px 16px;
     color: var(--text-button);
     text-decoration: none;
 }
@@ -99,7 +98,6 @@ body {
 }
 
 .contact__list-items {
-    padding: 15px;
     background-color: var(--bg-secondary);
     border-radius: 15px;
     box-shadow: 0 0 6px 2px var(--shadow);
@@ -112,6 +110,8 @@ body {
 }
 
 .contact__list-items a {
+    display: block;
+    padding: 15px;
     text-decoration: none;
     color: var(--text-button);
 }
