@@ -22,13 +22,14 @@
     </header>
 
     <section id="about" class="about__section">
-          <div class="about__container">
+        <div class="about__container">
             <h1>Hola, soy Brian Vecino</h1>
             <h2 class="about__section-h2">Desarrollador Frontend</h2>
-            <p class="about__section-p">Apasionado por convertir diseños e ideas en interfaces web rápidas y eficientes. Mi viaje en la programación comenzó con un curso de JavaScript en  CoderHouse, y desde entonces, me he enfocado en dominar las tecnologías fundamentales del desarrollo web.<br><br>
-            Mi enfoque principal es la funcionalidad y la experiencia del usuario (UX). Creo que la mejor interfaz es aquella que el usuario no tiene que pensar. Disfruto la resolución de problemas lógicos con JavaScript y la creación de diseños responsivos y temáticos utilizando CSS.<br><br>
-            Estoy en constante aprendizaje y buscando activamente unirme a un equipo donde pueda aplicar mis habilidades técnicas para crear soluciones y contribuir al crecimiento colectivo.</p>
-            </div>
+            <p class="about__section-p">Enfocado en <strong>Angular y JavaScript</strong>, construyo interfaces funcionales con buena UX.
+                Empecé en CoderHouse y desde entonces no paré de aprender.
+                Busco mi primer rol en un equipo donde pueda seguir creciendo.
+            </p>
+        </div>
     </section>
 
 
@@ -40,16 +41,12 @@
             <li class="contact__list-items">
                 <a href="https://www.linkedin.com/in/brian-vecino-582ab72a6/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </li>
-
+            <button class="contact__list-items" id="copyEmailBtn" data-email="brian.vecino@outlook.com">
+                <a href="mailto:brian.vecino@outlook.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </button>
             <li class="contact__list-items">
                 <a href="docs/CV - Brian Vecino.pdf" download><i class="fa-solid fa-file"></i> Curriculum</a>
             </li>
-            <button class="contact__list-items" id="copyEmailBtn" data-email="brian.vecino@outlook.com">
-                <a href="mailto:brian.vecino@outlook.com"><i class="fa-solid fa-envelope"></i> Email (Click para Copiar)</a>
-            </button>
-            <button  class="contact__list-items"><a href="tel:+5492346564256">
-                <i class="fa-solid fa-phone"></i> Teléfono</a>
-            </button>
         </ul>
     </section>
 
@@ -58,7 +55,38 @@
     <section id="projects" class="projects__section">
         <h2>Mis Proyectos Destacados</h2>
         <div class="projects__container"> 
-
+            <article id="card-list" class="project__container-card">
+                <img class="projects__img" src="img/Vet.png" alt="">
+                <h4 class="card__title"> 🐶 Gestion de turnos Veterinaria</h4>
+                <p class="card__p"> Sistema para registrar y administrar turnos de una clínica veterinaria con estados y filtros.</p>
+                <div class="project__container-tags">
+                    <ul class="project__container-list">
+                        <li class="project__container-item">Angular</li>
+                        <li class="project__container-item">TypeScript</li>
+                        <li class="project__container-item">Signals</li>
+                    </ul>
+                </div>
+                <div class="project__container-links">
+                    <a href="https://brianvecino.github.io/veterinaria" target="_blank" class="btn">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/veterinaria" target="_blank" class="btn">Código</a>
+                </div>
+            </article>
+            <article id="card-list" class="project__container-card">
+                <img class="projects__img" src="img/pokeapi.png" alt="">
+                <h4 class="card__title"> 🎮 PokéDex con PokeAPI </h4>
+                <p class="card__p">Explorador de Pokémon que consume la PokeAPI con búsqueda, tipos y datos de cada especie.</p>
+                <div class="project__container-tags">
+                    <ul class="project__container-list">
+                        <li class="project__container-item">Angular</li>
+                        <li class="project__container-item">PokeAPI</li>
+                        <li class="project__container-item">HttpClient</li>
+                    </ul>
+                </div>
+                <div class="project__container-links">
+                    <a href="https://brianvecino.github.io/PokeApi/" target="_blank" class="btn">Ver Demo</a>
+                    <a href="https://github.com/BrianVecino/PokeApi" target="_blank" class="btn">Código</a>
+                </div>
+            </article>
             <article id="card-list" class="project__container-card">
                 <img class="projects__img" src="img/brianvecino.github.io_To-do-Angular_.png" alt="">
                 <h4 class="card__title">📋 To-Do App Con Angular</h4>
@@ -75,8 +103,7 @@
                     <a href="https://github.com/BrianVecino/To-do-Angular" target="_blank" class="btn">Código</a>
                 </div>
             </article>
-
-            <article id="card-movie" class="project__container-card">
+            <article id="card-list" class="project__container-card">
                 <img class="projects__img" src="img/brianvecino.github.io_peliculas-tmdb_.png" alt="">
                 <h4 class="card__title">🎥 Buscador de peliculas & Filtro (TMDb)</h4>
                 <p class="card__p">Aplicación para explorar películas populares, implementando filtrado dinámico a través de la API The Movie Database (TMDb).</p>
@@ -92,7 +119,6 @@
                     <a href="https://github.com/BrianVecino/peliculas-tmdb" target="_blank" class="btn">Código</a>
                 </div>
             </article>
-
             </div>
     </section>
 
@@ -103,24 +129,24 @@
         <div class="academic__grid">
             <article class="academic__card">
                 <h4 class="academic__card-institution">CoderHouse</h4>
-                <p class="academic__card-course">Curso Completado de Angular</p>
-                <time class="academic__card-date">2023</time>
-                <a class="academic__card-title" href="/img/angular.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
+                    <p class="academic__card-course">Curso Completado de Angular</p>
+                    <time class="academic__card-date">2023</time>
+                    <a class="academic__card-title" href="/img/angular.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
             </article>
             <article class="academic__card">
                 <h4 class="academic__card-institution">CoderHouse</h4>
-                <p class="academic__card-course">Curso Completado de JavaScript</p>
-                <time class="academic__card-date">2024</time>
-                <a class="academic__card-title" href="/img/js.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
+                    <p class="academic__card-course">Curso Completado de JavaScript</p>
+                    <time class="academic__card-date">2024</time>
+                    <a class="academic__card-title" href="/img/js.jpeg" download><i class="fa-solid fa-file"></i> Certificado</a>
             </article>
 
             <article class="academic__card">
                 <h4 class="academic__card-institution">Teclab</h4>
-                <p class="academic__card-course">Tecnicatura en Programacion
+                    <p class="academic__card-course">Tecnicatura en Programacion
                     Certificado Intermedio
-                </p>
-                <time class="academic__card-date">2026</time>
-                <a class="academic__card-title" href="/img/diploma intermedio.pdf" download><i class="fa-solid fa-file"></i> Certificado</a>
+                    </p>
+                    <time class="academic__card-date">2026</time>
+                    <a class="academic__card-title" href="/img/diploma intermedio.pdf" download><i class="fa-solid fa-file"></i> Certificado</a>
             </article>
         </div>
 </section>
@@ -128,34 +154,33 @@
 
     <hr class="section__divider"> 
 
-    <section id="skills" class="skills__section">
-        <h4 class="skills__title">Stack Tecnologico</h4>
-    
-        <h4 class="skills__grid-title">Front End</h4>
-        <div class="skills__grid">
-            <article class="skills__card">
-                <i class="fa-brands fa-html5 skills__icon"></i>
-                <p class="skills__name">HTML</p>
-            </article>
-
-            <article class="skills__card">
-                <i class="fa-brands fa-css3 skills__icon"></i>
-                <p class="skills__name">CSS</p>
-            </article>
-
-            <article class="skills__card">
-                <i class="fa-brands fa-js skills__icon"></i>
-                <p class="skills__name">JAVASCRIPT</p>
-            </article>
-</div>
-
-        <h4 class="skills__grid-title">Framework, tools y database</h4>
+<section id="skills" class="skills__section">
+    <h4 class="skills__title">Stack Tecnologico</h4>
+    <h4 class="skills__grid-title">Framework</h4>
         <div class="skills__grid">
             <article class="skills__card">
                 <i class="fa-brands fa-angular skills__icon"></i>
                 <p class="skills__name">ANGULAR</p>
             </article>
         </div>
+    <h4 class="skills__grid-title">Front End</h4>
+        <div class="skills__grid">
+            <article class="skills__card">
+                <i class="fa-brands fa-html5 skills__icon"></i>
+                <p class="skills__name">HTML</p>
+            </article>
+            <article class="skills__card">
+                <i class="fa-brands fa-css3 skills__icon"></i>
+                <p class="skills__name">CSS</p>
+            </article>
+            <article class="skills__card">
+                <i class="fa-brands fa-js skills__icon"></i>
+                <p class="skills__name">JAVASCRIPT</p>
+            </article>
+        </div>
+
+
+    <h4 class="skills__grid-title">Tools y Database</h4>
         <div class="skills__grid">
             <article class="skills__card">
                 <i class="fa-brands fa-git-alt skills__icon"></i>
@@ -166,9 +191,8 @@
                 <i class="fa-solid fa-database skills__icon"></i>
                 <p class="skills__name">POSTGRESQL</p>
             </article>
-            </div>
-        
-    </section>
+        </div>
+</section>
 
 
 

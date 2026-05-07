@@ -73,10 +73,8 @@ body {
 
 .about__section {
     box-sizing: border-box;
-    max-height: 1400px;
     width: 100%;
     margin-top: 50px;
-    
 }
 
 .about__container {
@@ -84,15 +82,17 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    max-width: 800px;
+    max-width: 950px;
     margin: auto;
     font-size: 1.1rem;
     text-wrap: balance;
 }
-.about-content p {
+
+.about__section-p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
     text-wrap: balance;
 }
-
 /* CONTACT SECTION */
 
 .contact__section {
@@ -145,7 +145,7 @@ body {
     justify-content: center;
     gap: 20px;
     min-width: 300px;
-    max-width: 1300px;
+    max-width: 1000px;
 }
 
 .card__title {
@@ -172,7 +172,7 @@ body {
 
 .project__container-card:hover {
     color: rgb(23, 30, 22);
-    background-color:#03caf2b7;
+    background-color:#17b5d4b7;
     .btn{
         color: #fff;
         background-color: #ff006e;
@@ -208,8 +208,8 @@ body {
 .btn {
     display: flex;
     align-items: center;
-    color: #fff;
-    background-color: #ff5a2d;
+    color: #030303;
+    background-color: var(--bg-secondary);
     text-decoration: none;
     max-width: 100px;
     height: 100%;
@@ -220,7 +220,7 @@ body {
 .projects__img {
     display: block;
     margin: 0 auto;
-    height: 600px;
+    height: 300px;
     width: 100%;
     max-height: 800px;
     object-fit: cover;
